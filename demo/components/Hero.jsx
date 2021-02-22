@@ -64,6 +64,14 @@ const Hero = styled((props) => (
       <p>
         <code>
           Forked from{' '}
+          <a href="https://github.com/SimeonC/react-emotion-flexboxgrid">
+            react-emotion-flexboxgrid
+          </a>
+        </code>
+      </p>
+      <p>
+        <code>
+          Forked from{' '}
           <a href="https://github.com/LoicMahieu/react-styled-flexboxgrid">
             react-styled-flexboxgrid
           </a>

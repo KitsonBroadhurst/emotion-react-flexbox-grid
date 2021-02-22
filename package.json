@@ -1,11 +1,11 @@
 {
   "name": "react-emotion-flexbox-grid",
-  "version": "9.0.0",
+  "version": "1.0.0",
   "description": "Grid system based on emotion and flexbox for React",
   "keywords": ["react", "grid", "flexbox", "styled", "emotion"],
   "main": "lib/index.js",
   "jsnext:main": "dist/react-emotion-flexbox-grid.es.js",
-  "module": "dist/react-emotion-flexbox-grid.es.js",
+  "module": "dist/react-emotion-flexboxgrid.es.js",
   "scripts": {
     "build": "npm run build:lib && npm run build:dist",
     "prebuild:lib": "rm -rf lib/*",
@@ -35,12 +35,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SimeonC/react-emotion-flexboxgrid.git"
+    "url": "git+https://github.com/KitsonBroadhurst/react-emotion-flexbox-grid"
   },
   "bugs": {
-    "url": "https://github.com/SimeonC/react-emotion-flexboxgrid/issues"
+    "url": "https://github.com/KitsonBroadhurst/react-emotion-flexbox-grid/issues"
   },
-  "homepage": "https://github.com/SimeonC/react-emotion-flexboxgrid",
+  "homepage": "https://github.com/KitsonBroadhurst/react-emotion-flexbox-grid",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",

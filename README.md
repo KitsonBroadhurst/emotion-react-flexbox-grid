@@ -1,9 +1,9 @@
 # react-emotion-flexboxgrid
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/SimeonC/react-emotion-flexboxgrid.svg)](https://greenkeeper.io/)
+<!-- [![Greenkeeper badge](https://badges.greenkeeper.io/SimeonC/react-emotion-flexboxgrid.svg)](https://greenkeeper.io/)
 [![npm version](https://badge.fury.io/js/react-emotion-flexboxgrid.svg)](https://badge.fury.io/js/react-styled-flexboxgrid)
 [![Build Status](https://travis-ci.org/SimeonC/react-emotion-flexboxgrid.svg?branch=master)](https://travis-ci.org/SimeonC/react-emotion-flexboxgrid)
-[![NPM Status](http://img.shields.io/npm/dm/react-emotion-flexboxgrid.svg?style=flat-square)](https://www.npmjs.org/package/react-emotion-flexboxgrid)
+[![NPM Status](http://img.shields.io/npm/dm/react-emotion-flexboxgrid.svg?style=flat-square)](https://www.npmjs.org/package/react-emotion-flexboxgrid) -->
 
 # Warning
 This is a This is a fork of [react-emotion-flexboxgrid](https://github.com/SimeonC/react-emotion-flexboxgrid), which is a fork of [react-styled-flexboxgrid](https://github.com/LoicMahieu/react-styled-flexboxgrid)
@@ -27,10 +27,10 @@ Highly inspired by the excellent [`react-flexbox-grid`](https://github.com/royle
 ### Installation
 
 ```
-npm i -S react-emotion-flexboxgrid
+npm i -S react-emotion-flexbox-grid
 ```
 
-`react-emotion-flexboxgrid` depends on 2 **peer** dependencies:
+`react-emotion-flexbox-grid` depends on 2 **peer** dependencies:
 
 * `react@^0.14.0 || ^15.0.0-0 || ^16.0.0-0`
 * `prop-types@^15.0.0-0`
@@ -45,7 +45,7 @@ Note on version numbers; we aim to match our "Major" version number with that of
 ```JSX
 import React from 'react'
 
-import {Grid, Col, Row} from 'react-emotion-flexboxgrid'
+import {Grid, Col, Row} from 'react-emotion-flexbox-grid'
 
 const App = props =>
   <Grid>
@@ -101,13 +101,13 @@ The `<Grid>` component is optional and can help to wrap children in a fixed/flui
 The grid use same defaults than [`flexboxgrid.css`](https://github.com/kristoferjoseph/flexboxgrid).
 
 You can customize values using [`<ThemeProvider>`](https://github.com/emotion-js/emotion/tree/master/packages/emotion-theming) component from emotion-theming.
-`react-emotion-flexboxgrid` will looks at the `flexboxgrid` property in the theme.
+`react-emotion-flexbox-grid` will looks at the `flexboxgrid` property in the theme.
 
 ```JSX
 import React from 'react'
 
 import { ThemeProvider } from 'emotion-theming'
-import { Grid, Col, Row } from 'react-emotion-flexboxgrid'
+import { Grid, Col, Row } from 'react-emotion-flexbox-grid'
 
 const theme = {
   flexboxgrid: {
@@ -142,6 +142,7 @@ const App = props =>
 
 ## Related projects
 
+* [react-emotion-flexboxgrid](https://github.com/SimeonC/react-emotion-flexboxgrid)
 * [react-styled-flexboxgrid](https://github.com/LoicMahieu/react-styled-flexboxgrid)
 * [emotion](https://github.com/emotion-js/emotion)
 * [hedron](https://github.com/JSBros/hedron)

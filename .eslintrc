@@ -1,0 +1,37 @@
+{
+  "extends": [
+    "airbnb"
+  ],
+  "rules": {
+    "arrow-parens": "off",
+    "function-paren-newline": "off",
+    "arrow-body-style": "error",
+    "comma-dangle": ["error", "never"],
+    "no-param-reassign": ["error", { "props": false }],
+    "no-mixed-operators": [
+      "error",
+      {
+        "groups": [
+          ["%", "**"],
+          ["+", "/"],
+          ["+", "*"],
+          ["-", "/"],
+          ["-", "*"],
+          ["%", "+"],
+          ["%", "-"],
+          ["%", "*"],
+          ["%", "/"],
+          ["**", "+"],
+          ["**", "-"],
+          ["**", "*"],
+          ["**", "/"],
+          ["&", "|", "^", "~", "<<", ">>", ">>>"],
+          ["==", "!=", "===", "!==", ">", ">=", "<", "<="],
+          ["&&", "||"],
+          ["in", "instanceof"]
+        ],
+        "allowSamePrecedence": false
+      }
+    ]
+  }
+}

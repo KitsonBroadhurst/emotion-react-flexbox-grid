@@ -1,0 +1,103 @@
+{
+  "name": "react-emotion-flexbox-grid",
+  "version": "9.0.0",
+  "description": "Grid system based on emotion and flexbox for React",
+  "keywords": ["react", "grid", "flexbox", "styled", "emotion"],
+  "main": "lib/index.js",
+  "jsnext:main": "dist/react-emotion-flexbox-grid.es.js",
+  "module": "dist/react-emotion-flexbox-grid.es.js",
+  "scripts": {
+    "build": "npm run build:lib && npm run build:dist",
+    "prebuild:lib": "rm -rf lib/*",
+    "build:lib": "babel --out-dir lib src",
+    "prebuild:umd": "rm -rf dist/*",
+    "prebuild:dist": "rm -rf dist/*",
+    "build:dist": "cross-env NODE_ENV=production rollup -c",
+    "build:watch": "npm run build:lib -- --watch",
+    "start":
+      "cross-env NODE_ENV=development webpack-dev-server --config demo/webpack.config.babel.js --hot",
+    "demo:build":
+      "cross-env NODE_ENV=production webpack --config demo/webpack.config.babel.js",
+    "lint": "eslint 'src/**/*.js'",
+    "test": "npm run lint && jest",
+    "prepare": "npm run build",
+    "precommit": "pretty-quick --staged"
+  },
+  "jest": {
+    "testMatch": ["**/src/**/*.test.js?(x)", "**/src/*.test.js?(x)"],
+    "setupTestFrameworkScriptFile": "./jestSetup.js"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "arrowParens": "always"
+  },
+  "author": "Loic Mahieu",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SimeonC/react-emotion-flexboxgrid.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SimeonC/react-emotion-flexboxgrid/issues"
+  },
+  "homepage": "https://github.com/SimeonC/react-emotion-flexboxgrid",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-emotion": "9.0.1",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.13",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "cross-env": "^5.1.3",
+    "emotion": ">= 9.0.1",
+    "emotion-theming": ">= 9.0.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.1",
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.6.1",
+    "html-loader": "^0.5.5",
+    "husky": "^0.14.3",
+    "jest": "^22.3.0",
+    "jest-emotion": "^9.0.0",
+    "jest-tobetype": "^1.1.0",
+    "lodash.compact": "^3.0.1",
+    "lodash.debounce": "^4.0.8",
+    "markdown-loader": "^2.0.2",
+    "prettier": "^1.10.2",
+    "pretty-quick": "^1.4.1",
+    "prop-types": "^15.6.0",
+    "react": "~16.2.0",
+    "react-dom": "^16.0.0",
+    "react-emotion": ">= 9.0.1",
+    "rollup": "^0.55.5",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-uglify": "^3.0.0",
+    "rollup-plugin-visualizer": "^0.3.1",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.1",
+    "webpack-hot-middleware": "^2.21.0"
+  },
+  "peerDependencies": {
+    "emotion": ">= 9.0.1",
+    "emotion-theming": ">= 9.0.0",
+    "react": ">= 0.14.0 < 17.0.0-0",
+    "react-emotion": ">= 9.0.1",
+    "prop-types": "^15.6.0"
+  },
+  "dependencies": {
+    "babel-jest": "^22.2.2",
+    "lodash.isinteger": "^4.0.4"
+  }
+}

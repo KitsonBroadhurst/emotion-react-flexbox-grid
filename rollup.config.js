@@ -8,7 +8,7 @@ const globals = {
   'prop-types': 'PropTypes',
   'lodash.isinteger': '_.isInteger'
 };
-const name = 'react-emotion-flexbox-grid';
+const name = 'emotion-react-flexbox-grid';
 
 const plugins = [
   babel({
@@ -26,14 +26,14 @@ export default [
   Object.assign({}, base, {
     output: [
       {
-        file: 'dist/react-emotion-flexbox-grid.js',
+        file: 'dist/emotion-react-flexbox-grid.js',
         format: 'umd',
         exports: 'named',
         name,
         globals
       },
       {
-        file: 'dist/react-emotion-flexbox-grid.es.js',
+        file: 'dist/emotion-react-flexbox-grid.es.js',
         format: 'es',
         exports: 'named',
         name,
@@ -44,7 +44,7 @@ export default [
   Object.assign({}, base, {
     output: [
       {
-        file: 'dist/react-emotion-flexbox-grid.min.js',
+        file: 'dist/emotion-react-flexbox-grid.min.js',
         format: 'umd',
         exports: 'named',
         name,

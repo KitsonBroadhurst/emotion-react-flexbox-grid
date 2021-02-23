@@ -91,7 +91,7 @@ const Hero = styled((props) => (
       </p>
     </Description>
     <Row center="xs">
-      <Button href="https://github.com/SimeonC/react-emotion-flexbox-grid">
+      <Button href="https://github.com/KitsonBroadhurst/emotion-react-flexbox-grid">
         Github
       </Button>
     </Row>

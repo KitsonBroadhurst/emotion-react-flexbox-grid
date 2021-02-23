@@ -1,10 +1,16 @@
 {
-  "name": "react-emotion-flexbox-grid",
+  "name": "emotion-react-flexbox-grid",
   "version": "1.0.0",
   "description": "Grid system based on emotion and flexbox for React",
-  "keywords": ["react", "grid", "flexbox", "styled", "emotion"],
+  "keywords": [
+    "react",
+    "grid",
+    "flexbox",
+    "styled",
+    "emotion"
+  ],
   "main": "lib/index.js",
-  "jsnext:main": "dist/react-emotion-flexbox-grid.es.js",
+  "jsnext:main": "dist/emotion-react-flexbox-grid.es.js",
   "module": "dist/react-emotion-flexboxgrid.es.js",
   "scripts": {
     "build": "npm run build:lib && npm run build:dist",
@@ -14,17 +20,18 @@
     "prebuild:dist": "rm -rf dist/*",
     "build:dist": "cross-env NODE_ENV=production rollup -c",
     "build:watch": "npm run build:lib -- --watch",
-    "start":
-      "cross-env NODE_ENV=development webpack-dev-server --config demo/webpack.config.babel.js --hot",
-    "demo:build":
-      "cross-env NODE_ENV=production webpack --config demo/webpack.config.babel.js",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --config demo/webpack.config.babel.js --hot",
+    "demo:build": "cross-env NODE_ENV=production webpack --config demo/webpack.config.babel.js",
     "lint": "eslint 'src/**/*.js'",
     "test": "npm run lint && jest",
     "prepare": "npm run build",
     "precommit": "pretty-quick --staged"
   },
   "jest": {
-    "testMatch": ["**/src/**/*.test.js?(x)", "**/src/*.test.js?(x)"],
+    "testMatch": [
+      "**/src/**/*.test.js?(x)",
+      "**/src/*.test.js?(x)"
+    ],
     "setupTestFrameworkScriptFile": "./jestSetup.js"
   },
   "prettier": {
@@ -35,12 +42,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KitsonBroadhurst/react-emotion-flexbox-grid"
+    "url": "git+https://github.com/KitsonBroadhurst/emotion-react-flexbox-grid"
   },
   "bugs": {
-    "url": "https://github.com/KitsonBroadhurst/react-emotion-flexbox-grid/issues"
+    "url": "https://github.com/KitsonBroadhurst/emotion-react-flexbox-gridd/issues"
   },
-  "homepage": "https://github.com/KitsonBroadhurst/react-emotion-flexbox-grid",
+  "homepage": "https://github.com/KitsonBroadhurst/emotion-react-flexbox-grid",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",

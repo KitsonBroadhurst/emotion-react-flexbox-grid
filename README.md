@@ -7,7 +7,7 @@
 
 # Warning
 
-This is a This is a fork of [react-emotion-flexboxgrid](https://github.com/SimeonC/react-emotion-flexboxgrid), which is a fork of [react-styled-flexboxgrid](https://github.com/LoicMahieu/react-styled-flexboxgrid)
+This is a fork of [react-emotion-flexboxgrid](https://github.com/SimeonC/react-emotion-flexboxgrid), which is a fork of [react-styled-flexboxgrid](https://github.com/LoicMahieu/react-styled-flexboxgrid)
 
 Both packages appear to be unmaintained and have a load of emotion warning messages, however, this lib is wired deeply into our codebase.
 
